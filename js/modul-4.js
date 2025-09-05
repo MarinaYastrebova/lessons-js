@@ -135,3 +135,43 @@ const allCars = [
 // const tags = tweets.flatMap((tweet) => tweet.tags);
 
 // console.log(tags);
+
+// -------------------------------6
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// const res = numbers.filter(item => item > 10);
+
+// ----------------------------- 7
+// const filterByPrice = (cars, threshold) => {
+//   return cars.filter(car => car.price < threshold);
+// };
+// console.log(filterByPrice(allCars, 30000));
+// console.log(allCars);
+
+// ---------------------------8
+/**
+ * Нехай функція getModelsOnSale повертає масив моделей автомобілів,
+ * але тільки тих, які зараз на розпродажі.
+ */
+
+// const getModelsOnSale = (arr) => {
+//   return arr
+//     .filter(car => car.onSale)
+//     .map(car => car.model)
+// }
+
+// console.log(getModelsOnSale(allCars))
+
+/**
+ * Нехай функція getSortedCarsOnSale повертає масив автомобілів
+ * на розпродажі (Властивість onSale), відсортованих за зростанням ціни.
+ */
+
+// const getSortedCarsOnSale = (arr) => {
+//   return arr
+//     .filter(item => item.onSale)
+//     .toSorted((a, b) => a.price - b.price)
+// }
+
+// console.table(getSortedCarsOnSale(allCars))
